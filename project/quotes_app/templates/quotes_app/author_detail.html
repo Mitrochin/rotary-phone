@@ -1,0 +1,15 @@
+{% extends "quotes/base.html" %}
+
+{% block title %}Author: {{ author.fullname }}{% endblock %}
+
+{% block content %}
+    <h2>Author: {{ author.fullname }}</h2>
+    <p>Born Date: {{ author.born_date }}</p>
+    <p>Born Location: {{ author.born_location }}</p>
+    <p>Description: {{ author.description }}</p>
+    <h3>Quotes:</h3>
+    <ul>
+        {% for quote in quotes %}
+            <li>{{ quote.quote }} - {{ quote.tags }}</li>
+        {% endfor %}
+   [_{{{CITATION{{{_1{](https://github.com/joelwembo/python-django-blog/tree/e9511e3c582e938ed2beb2466307a4eb77a080e4/users%2Fviews.py)
